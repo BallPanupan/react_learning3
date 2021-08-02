@@ -1,38 +1,48 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import {App} from './App';
+import Comment from './function/Comment';
 
-
-function formatName(user) {
-  return user.firstName + ' ' + user.lastName;
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
 }
 
-let user = {
-  firstName: '',
-  lastName: ''
-};
-
-user['firstName'] = "Panupan";
-user['lastName'] = "xxxxx";
-
-console.log(user);
-
-
-const element = (
-  <h1>
-    Hello, {formatName(user)}!
-  </h1>
-);
+function App() {
+  return (
+    <div>
+      <Welcome name="Sara" />
+      <Welcome name="Cahal" />
+      <Welcome name="Edite" />
+    </div>
+  );
+}
 
 ReactDOM.render(
-  element,
+  <App />,
   document.getElementById('root')
 );
 
-// const element_x = <h1>Hello const X</h1>
-// ReactDOM.render(element_x, document.getElementById('root'));
+const datax = {
+  author: {
+    name: 'panupan'
+  } ,
+  text: 'text'
+};
+
+console.log(datax);
+const element = (
+  Comment(datax)
+);
+
+console.log(element);
+
+
+ReactDOM.render(
+  element,
+  document.getElementById('panupan')
+);
 
 
 
