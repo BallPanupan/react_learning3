@@ -4,17 +4,37 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+
+function formatName(user) {
+  return user.firstName + ' ' + user.lastName;
+}
+
+let user = {
+  firstName: '',
+  lastName: ''
+};
+
+user['firstName'] = "Panupan";
+user['lastName'] = "xxxxx";
+
+console.log(user);
+
+
+const element = (
+  <h1>
+    Hello, {formatName(user)}!
+  </h1>
+);
 
 ReactDOM.render(
-  <h1>Hello, Panupan!</h1>,
-  document.getElementById('hellox')
+  element,
+  document.getElementById('root')
 );
+
+// const element_x = <h1>Hello const X</h1>
+// ReactDOM.render(element_x, document.getElementById('root'));
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
