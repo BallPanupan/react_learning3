@@ -1,13 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 // import './index.css';
-import reportWebVitals from './reportWebVitals';
-import App from './App';
+import reportWebVitals from "./reportWebVitals";
+import App from "./App";
 
-import Form from './components/form';
+import Form from "./components/form";
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 reportWebVitals();
