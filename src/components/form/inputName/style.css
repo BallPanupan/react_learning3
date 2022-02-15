@@ -1,0 +1,17 @@
+.inputName {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputName h1 {
+    margin: 0px;
+}
+
+.inputName input[type="text"] {
+    font-size: 22px;
+}
+
+.form-input {
+    display: flex;
+    gap: 10px;
+}
