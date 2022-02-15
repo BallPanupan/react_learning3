@@ -35,9 +35,9 @@ function Header(props) {
           {
             menu.map(listMenu => {
               return (
-                <div>
+                <a href='#'>
                   {listMenu.name}
-                </div>
+                </a>
               )
             }) 
           }
