@@ -1,8 +1,12 @@
 import InputName from "../../form/inputName";
+import Header from "../layout/header";
 
 function HomePage(props) {
     return (
-        <InputName/>
+        <>
+            <Header/>
+            <InputName/>
+        </>
     );
 }
 

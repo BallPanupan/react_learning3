@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './style.css';
 
 function InputName(props) {
-  const [name, setName] = useState('Ball Panupan');
+  const [name, setName] = useState('');
 
   return (
     <div className='inputName'>

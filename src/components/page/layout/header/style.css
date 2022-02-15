@@ -1,0 +1,21 @@
+/* Header */
+.Header {
+    height: 60px;
+    background-color: #bfbfbf;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.list-menu {
+    display: flex;
+    width: 600px;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.menu-group {
+    display: flex;
+    gap: 10px;
+}

@@ -1,5 +1,13 @@
+/* APP CSS */
 body {
   font-family: monospace;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 60px;
 }
 
 .layout {
@@ -20,6 +28,10 @@ body {
 
   border: solid 1px;
   border-color: #d800ff21;
+}
+
+h1 {
+  margin: 0px;
 }
 
 /* .menu {
